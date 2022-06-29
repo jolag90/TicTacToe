@@ -1,0 +1,8 @@
+<h1>TicTacToe</h1>
+<div class="message"> 
+  <%= raw @message%>
+  <%= if @restart do  %>
+    <div> <button phx-click="restart"> restart game </button> </div>
+  <% end %>
+</div>
+<.draw_board board={@board} player={@player} />
